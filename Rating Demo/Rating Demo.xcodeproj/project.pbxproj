@@ -11,8 +11,35 @@
 		B275F40919BA5E3600E6F169 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B275F40819BA5E3600E6F169 /* ViewController.swift */; };
 		B275F40C19BA5E3600E6F169 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B275F40A19BA5E3600E6F169 /* Main.storyboard */; };
 		B275F40E19BA5E3600E6F169 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B275F40D19BA5E3600E6F169 /* Images.xcassets */; };
-		B275F42519BA5E5100E6F169 /* FloatRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B275F42419BA5E5100E6F169 /* FloatRatingView.swift */; };
+		FD9E16532A4441EB0023CC92 /* FloatRatingView.h in Headers */ = {isa = PBXBuildFile; fileRef = FD9E16522A4441EB0023CC92 /* FloatRatingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD9E16562A4441EB0023CC92 /* FloatRatingView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD9E16502A4441EB0023CC92 /* FloatRatingView.framework */; };
+		FD9E16572A4441EB0023CC92 /* FloatRatingView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD9E16502A4441EB0023CC92 /* FloatRatingView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FD9E165C2A4442020023CC92 /* FloatRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B275F42419BA5E5100E6F169 /* FloatRatingView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD9E16542A4441EB0023CC92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B275F3F919BA5E3600E6F169 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD9E164F2A4441EB0023CC92;
+			remoteInfo = FloatRatingView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FD9E16582A4441EC0023CC92 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FD9E16572A4441EB0023CC92 /* FloatRatingView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B275F40119BA5E3600E6F169 /* Rating Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rating Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +49,20 @@
 		B275F40B19BA5E3600E6F169 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B275F40D19BA5E3600E6F169 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B275F42419BA5E5100E6F169 /* FloatRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FloatRatingView.swift; path = ../../FloatRatingView.swift; sourceTree = "<group>"; };
+		FD9E16502A4441EB0023CC92 /* FloatRatingView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FloatRatingView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD9E16522A4441EB0023CC92 /* FloatRatingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatRatingView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B275F3FE19BA5E3600E6F169 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD9E16562A4441EB0023CC92 /* FloatRatingView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD9E164D2A4441EB0023CC92 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				B275F40319BA5E3600E6F169 /* Rating Demo */,
+				FD9E16512A4441EB0023CC92 /* FloatRatingView */,
 				B275F40219BA5E3600E6F169 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				B275F40119BA5E3600E6F169 /* Rating Demo.app */,
+				FD9E16502A4441EB0023CC92 /* FloatRatingView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,7 +119,26 @@
 			name = FloatRatingView;
 			sourceTree = "<group>";
 		};
+		FD9E16512A4441EB0023CC92 /* FloatRatingView */ = {
+			isa = PBXGroup;
+			children = (
+				FD9E16522A4441EB0023CC92 /* FloatRatingView.h */,
+			);
+			path = FloatRatingView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FD9E164B2A4441EB0023CC92 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD9E16532A4441EB0023CC92 /* FloatRatingView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		B275F40019BA5E3600E6F169 /* Rating Demo */ = {
@@ -90,15 +148,35 @@
 				B275F3FD19BA5E3600E6F169 /* Sources */,
 				B275F3FE19BA5E3600E6F169 /* Frameworks */,
 				B275F3FF19BA5E3600E6F169 /* Resources */,
+				FD9E16582A4441EC0023CC92 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FD9E16552A4441EB0023CC92 /* PBXTargetDependency */,
 			);
 			name = "Rating Demo";
 			productName = "Rating Demo";
 			productReference = B275F40119BA5E3600E6F169 /* Rating Demo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FD9E164F2A4441EB0023CC92 /* FloatRatingView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD9E165B2A4441EC0023CC92 /* Build configuration list for PBXNativeTarget "FloatRatingView" */;
+			buildPhases = (
+				FD9E164B2A4441EB0023CC92 /* Headers */,
+				FD9E164C2A4441EB0023CC92 /* Sources */,
+				FD9E164D2A4441EB0023CC92 /* Frameworks */,
+				FD9E164E2A4441EB0023CC92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FloatRatingView;
+			productName = FloatRatingView;
+			productReference = FD9E16502A4441EB0023CC92 /* FloatRatingView.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -114,6 +192,10 @@
 					B275F40019BA5E3600E6F169 = {
 						CreatedOnToolsVersion = 6.0;
 						LastSwiftMigration = 1030;
+					};
+					FD9E164F2A4441EB0023CC92 = {
+						CreatedOnToolsVersion = 14.2;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -132,6 +214,7 @@
 			projectRoot = "";
 			targets = (
 				B275F40019BA5E3600E6F169 /* Rating Demo */,
+				FD9E164F2A4441EB0023CC92 /* FloatRatingView */,
 			);
 		};
 /* End PBXProject section */
@@ -146,6 +229,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FD9E164E2A4441EB0023CC92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -153,13 +243,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B275F42519BA5E5100E6F169 /* FloatRatingView.swift in Sources */,
 				B275F40919BA5E3600E6F169 /* ViewController.swift in Sources */,
 				B275F40719BA5E3600E6F169 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FD9E164C2A4441EB0023CC92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD9E165C2A4442020023CC92 /* FloatRatingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD9E16552A4441EB0023CC92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD9E164F2A4441EB0023CC92 /* FloatRatingView */;
+			targetProxy = FD9E16542A4441EB0023CC92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B275F40A19BA5E3600E6F169 /* Main.storyboard */ = {
@@ -279,6 +384,7 @@
 		B275F41E19BA5E3600E6F169 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Rating Demo/Info.plist";
@@ -293,6 +399,7 @@
 		B275F41F19BA5E3600E6F169 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Rating Demo/Info.plist";
@@ -301,6 +408,81 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.onthepursuit.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FD9E16592A4441EC0023CC92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 On The Pursuit. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = de.gerasymenko.FloatRatingView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FD9E165A2A4441EC0023CC92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 On The Pursuit. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = de.gerasymenko.FloatRatingView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -321,6 +503,15 @@
 			buildConfigurations = (
 				B275F41E19BA5E3600E6F169 /* Debug */,
 				B275F41F19BA5E3600E6F169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD9E165B2A4441EC0023CC92 /* Build configuration list for PBXNativeTarget "FloatRatingView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD9E16592A4441EC0023CC92 /* Debug */,
+				FD9E165A2A4441EC0023CC92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
